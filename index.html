@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>純 CSS 毛玻璃特效示範</title>
+  <link rel="stylesheet" href="stylesheets/all.css">
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+  <div class="card card-custom container ">
+    <div class="card-bg"></div>
+    <nav class="navbar navbar-expand-lg navbar-light row">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+
+    </nav>
+    <div class="py-3">
+      <div class="row">
+        <div class="col-6 text-dark d-flex align-items-center">
+          <div>
+            <h2>Hexschool have a good time.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto facere eligendi sit non ea atque
+              possimus ab, placeat fugit minima! Expedita vero asperiores ducimus obcaecati cupiditate aliquam saepe magnam.</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">Button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="https://images.unsplash.com/photo-1478144592103-25e218a04891?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4fbcb7ac5274991bf1522ac40ee9233d&auto=format&fit=crop&w=1268&q=80"
+            class="img-fluid" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <span class="rectangle" style="left: -30px; top: 60px;"></span>
+    <span class="circle" style="left: 50%; top: -30px;"></span>
+
+    <svg class="triangle" width="80px" height="80px" style="right: 5%; top: 70%;">
+      <polygon class="triangle-polygon" points="40,15 65,65 15,65"></polygon>
+    </svg>
+
+  </div>
+</body>
+
+</html>

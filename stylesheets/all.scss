@@ -1,0 +1,74 @@
+// Required
+@import '../node_modules/bootstrap/scss/functions';
+@import 'helpers/variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+$pink-color: #fe6cba;
+$purple-color: #9e71ff;
+$blue-color: #6cdbfe;
+$angle-size: 80px;
+$angle-border: 15px;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a98ac47048f530b6d587279d52c13ab7&auto=format&fit=crop&w=1936&q=80);
+  background-repeat: no-repeat;
+}
+
+.card-custom {
+  position: relative;
+  background-color: rgba(white, 0.6);
+  box-shadow: 0px 5px 35px rgba(black, 0.5);
+  border-radius: 10px;
+  min-height: 50%;
+}
+.card-bg {
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -2;
+  border-radius: 10px;
+}
+.card-bg:after {
+  content: '';
+  background-image: url(https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a98ac47048f530b6d587279d52c13ab7&auto=format&fit=crop&w=1936&q=80);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+  background-attachment: fixed;
+}
+
+.rectangle {
+  display: block;
+  width: $angle-size;
+  height: $angle-size;
+  border: $purple-color solid $angle-border;
+  position: absolute;
+  filter: drop-shadow(5px 5px 10px rgba($purple-color, 1));
+}
+.circle {
+  display: block;
+  width: $angle-size;
+  height: $angle-size;
+  border-radius: $angle-size;
+  border: $pink-color solid $angle-border;
+  position: absolute;
+  filter: drop-shadow(5px 5px 10px rgba($pink-color, 1));
+}
+.triangle {
+  .triangle-polygon {
+    fill: transparent;
+    stroke: $blue-color;
+    stroke-width: $angle-border;
+  }
+  position: absolute;
+  filter: drop-shadow(5px 5px 10px rgba($blue-color, 1));
+}
